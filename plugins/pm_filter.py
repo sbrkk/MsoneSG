@@ -434,8 +434,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('ᴅᴋ ʙᴏᴛx', url='https://t.me/dk_botx'),
-            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/dkbotxchats'),
+            InlineKeyboardButton('ᴄᴘ ғʟɪᴄᴋs', url='https://t.me/cpFlicks'),
+            InlineKeyboardButton('ᴍᴏᴠɪᴇs', url='https://t.me/joinchat/t2g8dRPeSps2MDI9'),
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -717,6 +717,7 @@ async def auto_filter(client, msg, spoll=False):
     else:
         await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     if spoll:
+        await asyncio.sleep(60)
         await msg.message.delete()
 
 
