@@ -717,6 +717,7 @@ async def auto_filter(client, msg, spoll=False):
     else:
         await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     if spoll:
+        k = await msg.reply("Request For {search} closed")
         await asyncio.sleep(40)
         await k.delete()
 
