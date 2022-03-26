@@ -609,7 +609,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     await query.answer('Podah Sherikkum')
 
 
-async def auto_filter(client, msg, spoll=True):
+async def auto_filter(client, msg, spoll=False):
     if not spoll:
         message = msg
         settings = await get_settings(message.chat.id)
@@ -717,9 +717,7 @@ async def auto_filter(client, msg, spoll=True):
     else:
         await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     if spoll:
-        k = await msg.reply("Request For {search} closed")
-        await asyncio.sleep(30)
-        await k.delete()
+       await k.delete()
 
 
 async def advantage_spell_chok(msg):
