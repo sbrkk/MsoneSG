@@ -52,8 +52,7 @@ async def save_group(bot, message):
                 InlineKeyboardButton('ᴘʀɪᴍᴇ', url=f'https://t.me/+kOaDBrcVLfI4Mzk1'),
                 InlineKeyboardButton('sᴇʀɪᴇs', url=f'https://t.me/+RDcMiv-vOzpkNDJl') ]
       [
-                InlineKeyboardButton('ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/+123iu9k9BXhiYTY9') ] 
-    ]]
+                InlineKeyboardButton('ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/+123iu9k9BXhiYTY9') ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
                         await (temp.MELCOW['welcome']).delete()
