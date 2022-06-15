@@ -49,10 +49,8 @@ async def save_group(bot, message):
         if settings["welcome"]:
             for u in message.new_chat_members:
                 buttons = [[
-                InlineKeyboardButton('ᴘʀɪᴍᴇ', url=f'https://t.me/+kOaDBrcVLfI4Mzk1'),
-                InlineKeyboardButton('sᴇʀɪᴇs', url=f'https://t.me/+RDcMiv-vOzpkNDJl') ]
-      [
-                InlineKeyboardButton('ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/+123iu9k9BXhiYTY9') ]]
+                InlineKeyboardButton('🌀 Jᴏɪɴ Fᴏʀ Mᴏʀᴇ 🌀', url="https://t.me/cpFlicks/23")
+            ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
                         await (temp.MELCOW['welcome']).delete()
