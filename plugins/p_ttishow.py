@@ -58,7 +58,7 @@ async def save_group(bot, message):
                         pass
                 temp.MELCOW['welcome'] = await message.reply_video(
                 video="https://telegra.ph/file/ebd9cb5d817f79ee50f95.mp4",
-                caption=f"<b>👋 Hey {u.mention},</b><b>Welcome To Cinema Pranthan✔️ Family.</b>/n/n<b>» Request In This Format 👇/n/nEg : Titanic  ✅/n/nTitanic 1997 ✅/n/nTitanic English Movie ❌/n/nTitanic English Movie Undo ❌/n/nTitanic English Movie kitto ❌ ",
+                caption=f"<b>👋 Hey {u.mention},</b><b>Welcome To Cinema Pranthan✔️ Family.</b>",
                 reply_markup=InlineKeyboardMarkup(buttons))
 
 
