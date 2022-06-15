@@ -48,12 +48,21 @@ async def save_group(bot, message):
         settings = await get_settings(message.chat.id)
         if settings["welcome"]:
             for u in message.new_chat_members:
+                buttons = [[
+                InlineKeyboardButton('ᴘʀɪᴍᴇ', url=f'https://t.me/+kOaDBrcVLfI4Mzk1'),
+                InlineKeyboardButton('sᴇʀɪᴇs', url=f'https://t.me/+RDcMiv-vOzpkNDJl') ]
+      [
+                InlineKeyboardButton('ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/+123iu9k9BXhiYTY9') ] 
+    ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                temp.MELCOW['welcome'] = await message.reply(f"<b>ʜᴇʏ, {u.mention}, ᴡᴇʟᴄᴏᴍᴇ {message.chat.title} ғʀɪᴇɴᴅɪɴᴇ ᴏᴋᴋᴇ ɢʀᴏᴜᴘɪʟ ᴀᴅᴅ ᴀᴀᴋᴋɪ ᴘᴇᴡᴇʀ ᴀᴋᴋᴇɴɴᴇ 💖</b>")
+                temp.MELCOW['welcome'] = await message.reply_video(
+                video="https://telegra.ph/Melcow-06-15",
+                caption=f"<b>👋 Hey {u.mention},</b><b>Welcome To Cinema Pranthan✔️ Family.</b>/n/n<b>» Request In This Format 👇/n/nEg : Titanic  ✅/n/nTitanic 1997 ✅/n/nTitanic English Movie ❌/n/nTitanic English Movie Undo ❌/n/nTitanic English Movie kitto ❌ ",
+                reply_markup=InlineKeyboardMarkup(buttons))
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
