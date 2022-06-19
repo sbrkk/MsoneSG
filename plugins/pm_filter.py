@@ -41,7 +41,7 @@ async def give_filter(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("𝖧𝖾𝗒 {query.from_user.mention}, 𝖳𝗁𝗂𝗌 𝖥𝗂𝗅𝗍𝖾𝗋 𝖨𝗌 𝖭𝗈𝗍 𝖥𝗈𝗋 𝖸𝗈𝗎", show_alert=True)
+        return await query.answer("𝖧𝖾𝗒, 𝖳𝗁𝗂𝗌 𝖥𝗂𝗅𝗍𝖾𝗋 𝖨𝗌 𝖭𝗈𝗍 𝖥𝗈𝗋 𝖸𝗈𝗎", show_alert=True)
     try:
         offset = int(offset)
     except:
@@ -347,6 +347,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             except Exception as e:
                 logger.exception(e)
             f_caption = f_caption
+            buttons = [
+            [
+                InlineKeyboardButton('🌀 Jᴏɪɴ Fᴏʀ Mᴏʀᴇ 🌀', url='https://t.me/cpflicks')
+            ]
+            ]
         if f_caption is None:
             f_caption = f"{files.file_name}"
 
@@ -362,9 +367,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     chat_id=query.from_user.id,
                     file_id=file_id,
                     caption=f_caption,
+                    reply_markup=InlineKeyboardMarkup(buttons),
                     protect_content=True if ident == "filep" else False 
                 )
-                await query.answer('𝖣𝖾𝖺𝗋 {query.from_user.mention}, 𝖨 𝖧𝖺𝗏𝖾 𝖲𝖾𝗇𝗍 𝖸𝗈𝗎 𝖥𝗂𝗅𝖾𝗌 𝖯𝖾𝗋𝗌𝗈𝗇𝖺𝗅𝗒... 𝖢𝗁𝖾𝖼𝗄 𝖬𝗒 𝖯𝖬', show_alert=True)
+                await query.answer('𝖨 𝖧𝖺𝗏𝖾 𝖲𝖾𝗇𝗍 𝖸𝗈𝗎 𝖥𝗂𝗅𝖾𝗌 𝖯𝖾𝗋𝗌𝗈𝗇𝖺𝗅𝗒... 𝖢𝗁𝖾𝖼𝗄 𝖬𝗒 𝖯𝖬', show_alert=True)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !', show_alert=True)
         except PeerIdInvalid:
@@ -373,7 +379,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("𝗔𝗬𝗬𝗔𝗗𝗔 𝗡𝗘𝗘 𝗢𝗥𝗨 𝗞𝗜𝗟𝗟𝗔𝗗𝗜 𝗧𝗛𝗔𝗡𝗡𝗘 , 𝗣𝗢𝗬𝗜 𝗝𝗢𝗜𝗡 𝗖𝗛𝗘𝗬𝗧𝗛𝗜𝗧 𝗜𝗩𝗜𝗗𝗘 𝗡𝗝𝗘𝗞𝗞 𝗦𝗘𝗧𝗧𝗔𝗬𝗜 !", show_alert=True)
+            await query.answer("Jᴏɪɴ Oᴜʀ Mᴀɪɴ Cʜᴀɴɴᴇʟ Tᴏ Gᴇᴛ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ !", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
