@@ -349,7 +349,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f_caption
             buttons = [
             [
-                InlineKeyboardButton('🌀 Jᴏɪɴ Fᴏʀ Mᴏʀᴇ 🌀', url='https://t.me/+900a8ZXR1qM3NWVl')
+                InlineKeyboardButton('🌿 Jᴏɪɴ Fᴏʀ Mᴏʀᴇ 🌿', url='https://t.me/+naZG4LL6qnswZjBl')
             ]
             ]
         if f_caption is None:
@@ -440,8 +440,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/+QKAf7_29pAJhODU1'),
-            InlineKeyboardButton('ᴍᴏᴠɪᴇs', url='https://t.me/+900a8ZXR1qM3NWVl'),
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/+VZ0Hv5SvYFMzMjk1'),
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/+naZG4LL6qnswZjBl'),
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -708,10 +708,10 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>Hai 👋 {message.from_user.mention}</b> 😍\n\n<b>📁 Found ✨  Files For Your Query : {search} 👇</b>"
+        cap = f"<b>Hai 👋 {message.from_user.mention}</b> 😍\n\n<b>📁 Found ✨  Files For Your Query : #{search} 👇</b>"
     if imdb and imdb.get('poster'):
         try:
-            fmsg = await message.reply_photo('https://telegra.ph/file/9a5f167d95dc39842aea9.jpg', caption=cap[:1024],
+            fmsg = await message.reply_photo('https://telegra.ph/DK-07-29-2', caption=cap[:1024],
                                       reply_markup=InlineKeyboardMarkup(btn))
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
