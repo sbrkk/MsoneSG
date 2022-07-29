@@ -22,7 +22,7 @@ async def save_group(bot, message):
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
-                InlineKeyboardButton('Support', url=f'https://t.me/{SUPPORT_CHAT}')
+                InlineKeyboardButton('Support', url=f'https://t.me/aboutme_dk')
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
@@ -49,7 +49,7 @@ async def save_group(bot, message):
         if settings["welcome"]:
             for u in message.new_chat_members:
                 buttons = [[
-                InlineKeyboardButton('🍂 Jᴏɪɴ Fᴏʀ Mᴏʀᴇ 🍂', url="https://t.me/+QKAf7_29pAJhODU1")
+                InlineKeyboardButton('🍂 Jᴏɪɴ Fᴏʀ Mᴏʀᴇ 🍂', url="https://t.me/+VZ0Hv5SvYFMzMjk1")
             ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
@@ -58,7 +58,7 @@ async def save_group(bot, message):
                         pass
                 temp.MELCOW['welcome'] = await message.reply_video(
                 video="https://telegra.ph/file/ebd9cb5d817f79ee50f95.mp4",
-                caption=f"<b>👋 Hey {u.mention} how are you?🥰,</b><b>Welcome to {message.chat.title} ✨\n\n എന്തൊക്കെ ഉണ്ട് വിശേഷങ്ങൾ🥰</b>",
+                caption=f"<b>👋 Hey {u.mention} how are you?🥰,</b><b>Welcome to {message.chat.title} ✨</b>",
                 reply_markup=InlineKeyboardMarkup(buttons))
 
 
