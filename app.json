@@ -1,5 +1,5 @@
 {
-    "name": "𝖯𝗈𝗈𝗃𝖺 𝖧𝖾𝗀𝖽𝖾 𝖬𝖧 𝖡𝗈𝗍",
+    "name": "𝗦𝘂𝘇𝘇𝘆 - #𝗔𝗯𝗢𝘂𝘁𝗠𝗲_𝗗𝗞",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "stack": "container",
     "keywords": [
@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/Tony-Stark2021/MH-BOT",
-    "repository": "https://github.com/Tony-Stark2021/MH-BOT",
+    "website": "https://github.com/Abidpknew/filteroli",
+    "repository": "https://github.com/Abidpknew/filteroli",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
