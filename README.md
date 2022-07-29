@@ -1,5 +1,3 @@
-Enth Thengayada ivide , vere Vella panikum poda ! 
+𝘾𝙍𝙀𝘼𝙏𝙊𝙍 : **#AbOutMe_DK**
 
-t.me/dk_botx
-
-https://www.heroku.com/deploy/?template=https://github.com/Tony-Stark2021/MH-BOT
+https://www.heroku.com/deploy/?template=https://github.com/Abidpknew/filteroli
