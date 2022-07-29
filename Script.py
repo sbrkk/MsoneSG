@@ -1,9 +1,9 @@
 class script(object):
-    START_TXT = """<b>𝖧𝖾𝗒 {},  𝖨 𝖺𝗆 𝖠 𝖥𝗂𝗅𝗍𝖾𝗋 𝖡𝗈𝗍 𝖮𝖿𝖿𝗂𝖼𝗂𝖺𝗅𝗅𝗒 𝖬𝖺𝖽𝖾 𝖥𝗈𝗋 𝖳𝖾𝖺𝗆 𝖬𝗈𝗏𝗂𝖾𝗌 𝖧𝗎𝖻 𝖬𝖺𝗅𝖺𝗒𝖺𝗅𝖺𝗆.</b></b>
+    START_TXT = """<b>𝖧𝖾𝗒 {},  𝖨 𝖺𝗆 𝖠 𝖥𝗂𝗅𝗍𝖾𝗋 𝖡𝗈𝗍 𝖮𝖿𝖿𝗂𝖼𝗂𝖺𝗅𝗅𝗒 𝖬𝖺𝖽𝖾 𝖥𝗈𝗋 𝖳𝖾𝖺𝗆 𝖬𝗈𝗏𝗂𝖾𝗌 2.0 .</b></b>
 """
     HELP_TXT = """ʜᴇʏ {}
 ʜᴇʀᴇ ɪs ᴍʏ ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅs."""
-    ABOUT_TXT = """○ 𝖬𝗒 𝖭𝖺𝗆e : 𝖯𝗈𝗈𝗃𝖺 𝖧𝖾𝗀𝖽𝖾
+    ABOUT_TXT = """○ 𝖬𝗒 𝖭𝖺𝗆e : 𝖲𝗎𝗓𝗓𝗒
 ○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/aboutme_DK'>Dᴋ 🇮🇳</a>
 ○ 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 : 𝖯𝗒𝗍𝗁𝗈𝗇 𝟥 
 ○ 𝖫𝗂𝖻𝗋𝖺𝗋𝗒 : 𝖯𝗒𝗋𝗈𝗀𝗋𝖺𝗆 𝖺𝗌𝗒𝗇𝖼𝗂𝗈 𝟢.𝟣𝟩.𝟣 
@@ -100,11 +100,12 @@ This module only works for my admins
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
 Added By - {}
-𝖫𝗈𝗀 𝖻𝗒 - @DK_BOTx
+
+𝖫𝗈𝗀 𝖻𝗒 #AbOutMe_DK
 """
     LOG_TEXT_P = """#NewUser
 ID - <code>{}</code>
 Name - {}
 
-𝖫𝗈𝗀 𝖻𝗒 - 𝖯𝗈𝗈𝗃𝖺 𝖧𝖾𝗀𝖽𝖾
+𝖫𝗈𝗀 𝖻𝗒 - #AbOutMe_DK
 """
