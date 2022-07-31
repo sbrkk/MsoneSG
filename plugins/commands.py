@@ -21,7 +21,7 @@ BATCH_FILES = {}
 @Client.on_message(filters.command("start") & filters.incoming & ~filters.edited)
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
-        
+        buttons = [[
         InlineKeyboardButton('⚙️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚙️', url=f'http://t.me/dk_botx') ] ,
       [
         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
