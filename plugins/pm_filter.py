@@ -9,7 +9,7 @@ import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
     make_inactive
 from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, \
-    SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE, CHANNEL_LINK, DELETE_TIME 
+    SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE, UPDATES_CHANNEL, DELETE_TIME 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
@@ -349,7 +349,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f_caption
             buttons = [
             [
-                InlineKeyboardButton('🌿 Jᴏɪɴ Fᴏʀ Mᴏʀᴇ 🌿', url='f"{CHANNEL_LINK}')
+                InlineKeyboardButton('🌿 Jᴏɪɴ Fᴏʀ Mᴏʀᴇ 🌿', url='{UPDATES_CHANNEL}')
             ]
             ]
         if f_caption is None:
@@ -440,7 +440,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='{CHANNEL_LINK}'),
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='{UPDATES_CHANNEL}'),
             InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/+naZG4LL6qnswZjBl'),
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
         ]]
