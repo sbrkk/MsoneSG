@@ -349,7 +349,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f_caption
             buttons = [
             [
-                InlineKeyboardButton('🌿 Jᴏɪɴ Fᴏʀ Mᴏʀᴇ 🌿', url='{UPDATES_CHANNEL}')
+                InlineKeyboardButton('🌿 Jᴏɪɴ Fᴏʀ Mᴏʀᴇ 🌿', url=f"{UPDATES_CHANNEL}")
             ]
             ]
         if f_caption is None:
@@ -440,7 +440,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='{UPDATES_CHANNEL}'),
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url=f"{UPDATES_CHANNEL}"),
             InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/+naZG4LL6qnswZjBl'),
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
         ]]
