@@ -1,9 +1,9 @@
 class script(object):
-    START_TXT = """<b>𝖧𝖾𝗒 {},  𝖨 𝖺𝗆 𝖠 𝖥𝗂𝗅𝗍𝖾𝗋 𝖡𝗈𝗍 𝖮𝖿𝖿𝗂𝖼𝗂𝖺𝗅𝗅𝗒 𝖬𝖺𝖽𝖾 𝖥𝗈𝗋 𝖳𝖾𝖺𝗆 𝖬𝗈𝗏𝗂𝖾𝗌 2.0 .</b></b>
+    START_TXT = """<b>𝖧𝖾𝗒 {},  𝖨 𝖺𝗆 𝖠 𝖥𝗂𝗅𝗍𝖾𝗋 𝖡𝗈𝗍 𝖬𝖺𝖽𝖾 𝖥𝗈𝗋 𝖳𝖾𝖺𝗆 𝖬𝗌𝗈𝗇𝖾 𝖬𝗈𝗏𝗂𝖾𝗌 .</b></b>
 """
     HELP_TXT = """ʜᴇʏ {}
 ʜᴇʀᴇ ɪs ᴍʏ ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅs."""
-    ABOUT_TXT = """○ 𝖬𝗒 𝖭𝖺𝗆e : 𝖲𝗎𝗓𝗓𝗒
+    ABOUT_TXT = """○ 𝖬𝗒 𝖭𝖺𝗆e : 𝘚.𝘎𝘰𝘰𝘥𝘮𝘢𝘯
 ○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/aboutme_DK'>Dᴋ 🇮🇳</a>
 ○ 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 : 𝖯𝗒𝗍𝗁𝗈𝗇 𝟥 
 ○ 𝖫𝗂𝖻𝗋𝖺𝗋𝗒 : 𝖯𝗒𝗋𝗈𝗀𝗋𝖺𝗆 𝖺𝗌𝗒𝗇𝖼𝗂𝗈 𝟢.𝟣𝟩.𝟣 
@@ -15,7 +15,7 @@ class script(object):
 - ഇപ്പൊ കിട്ടും നോക്കി ഇരുന്നോ .
 
 <b>DEVS:</b>
-- <a href=https://t.me/smovieofficial>dk [OFLINE]</a>"""
+- <a href=https://t.me/AboutMe_DK>dk [OFFLINE]</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and 𝕋𝔼𝕊𝕊𝔸 will respond whenever a keyword is found the message
@@ -101,7 +101,7 @@ Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
 Added By - {}
 
-𝖫𝗈𝗀 𝖻𝗒 #AbOutMe_DK
+𝖫𝗈𝗀 𝖻𝗒 #𝔰𝔞𝔲𝔩𝔤𝔬𝔬𝔡𝔪𝔞𝔫
 """
     LOG_TEXT_P = """#NewUser
 ID - <code>{}</code>
