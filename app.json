@@ -1,5 +1,5 @@
 {
-    "name": "𝗦𝘂𝘇𝘇𝘆 - #𝗔𝗯𝗢𝘂𝘁𝗠𝗲_𝗗𝗞",
+    "name": "𝗦𝗮𝘂𝗹 𝗚𝗼𝗼𝗱𝗺𝗮𝗻 - #𝗔𝗯𝗢𝘂𝘁𝗠𝗲_𝗗𝗞",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "stack": "container",
     "keywords": [
@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/Abidpknew/filteroli",
-    "repository": "https://github.com/Abidpknew/filteroli",
+    "website": "https://github.com/sbrkk/MsoneSG",
+    "repository": "https://github.com/sbrkk/MsoneSG",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -44,6 +44,11 @@
         },
         "LOG_CHANNEL": {
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
+            "required": true
+        },
+        "UPDATES_CHANNELS": {
+            "description": "Place Your Updates channel Link. This link will be shown in About and Inline button under File.",
+            "value": "https://t.me/+UGphxBkNcAg3Mzg1",
             "required": true
         },
         "AUTH_USERS": {
