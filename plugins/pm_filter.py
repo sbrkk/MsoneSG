@@ -441,7 +441,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url=f"{UPDATES_CHANNEL}"),
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/+naZG4LL6qnswZjBl'),
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/+RYKxhcuNB1Q3Yzg1'),
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -711,7 +711,7 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"<b>Hai 👋 {message.from_user.mention}</b> 😍\n\n<b>📁 Found ✨  Files For Your Query : #{search} 👇</b>"
     if imdb and imdb.get('poster'):
         try:
-            fmsg = await message.reply_photo('https://telegra.ph/DK-07-29-2', caption=cap[:1024],
+            fmsg = await message.reply_photo('https://te.legra.ph/file/6b21e3f579dc2db5cabd9.jpg', caption=cap[:1024],
                                       reply_markup=InlineKeyboardMarkup(btn))
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
