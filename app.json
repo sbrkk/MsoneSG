@@ -51,6 +51,11 @@
             "value": "https://t.me/+UGphxBkNcAg3Mzg1",
             "required": true
         },
+        "DELETE_TIME": {
+            "description": "Autofilter Automatic Close Time. Set in Seconds.",
+            "value": "200",
+            "required": True
+        },
         "AUTH_USERS": {
             "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
             "required": false
